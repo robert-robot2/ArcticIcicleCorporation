@@ -1,0 +1,25 @@
+﻿
+
+
+
+
+
+
+
+
+
+.ChatboxView {
+    background-color: white;
+    border: 5px groove black;
+    display: flex;
+    flex-direction: row;
+    max-width: 1080px;
+}
+
+.ChatboxColumn {
+    min-width: 60px;
+    min-height: 400px;
+    height: 100%;
+}
+
+

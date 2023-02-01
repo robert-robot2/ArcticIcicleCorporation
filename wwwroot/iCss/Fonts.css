@@ -1,0 +1,36 @@
+﻿
+
+
+.IcySegoeDefault {
+    font-family: 'Segoe Script';
+    text-shadow: 2px 2px 2px blue;
+}
+
+
+.IcySegoeWhite {
+    font-family: 'Segoe Script';
+    color: snow;
+    text-shadow: 4px 4px 4px blue;
+}
+.IcySegoeBlack {
+    font-family: 'Segoe Script';
+    color: black;
+    text-shadow: 2px 2px 2px blue;
+}
+.IcySegoeGreen {
+    font-family: 'Segoe Script';
+    color: rgb(76 255 0);
+    text-shadow: 2px 2px 2px green;
+}
+
+.IcySegoeRedBlack {
+    font-family: 'Segoe Script';
+    color: red;
+    text-shadow: 2px 2px 2px black;
+    font-size:125%;
+}
+.IcySegoeBlue {
+    font-family: 'Segoe Script';
+    color: #3a2de4;
+    text-shadow: 4px 4px 4px blue;
+}

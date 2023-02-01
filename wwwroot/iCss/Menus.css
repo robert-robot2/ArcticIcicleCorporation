@@ -1,0 +1,227 @@
+﻿/* Dropdown Button */
+.dropbtn {
+    
+    background-image: linear-gradient(180deg, rgb(0, 0, 0) 0%, #9999FF 70%);
+    color: white;
+    padding: 12px;
+    font-size: 12px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: fixed;
+    
+    display: inline-block;
+    z-index: 2;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:rgba(0,0,255,.21);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,255,.21);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #4800ff;
+        }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Dropdown Button */
+.dropbtn2 {
+   
+    
+    
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropright2 {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropright2-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,255,.21);
+    min-width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+    margin-top: -50px;
+    margin-left: 120px;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropright2-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,255,.21);
+    min-width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+}
+    /* Links inside the dropdown */
+    .dropright2-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        /* Change color of dropdown links on hover */
+        .dropright2-content a:hover {
+            background-color: #4800ff;
+        }
+
+/* Show the dropdown menu on hover */
+.dropright2:hover .dropright2-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropright2:hover .dropbtn2 {
+    background-color: black;
+}
+
+
+
+/* Dropdown Button */
+.dropbtn3 {
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropright3 {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropright3-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,255,.21);
+    min-width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+    margin-top: -50px;
+    margin-left: 145px;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropright3-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,255,.21);
+    min-width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:3;
+}
+    /* Links inside the dropdown */
+    .dropright3-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        /* Change color of dropdown links on hover */
+        .dropright3-content a:hover {
+            background-color: #4800ff;
+        }
+
+/* Show the dropdown menu on hover */
+.dropright3:hover .dropright3-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropright3:hover .dropbtn3 {
+    background-color: black;
+}
+
+
+
+/* Main Picture Intro */
+
+
+.MainIntroViewport {
+    background-image: url(../Hexgridnew001blue.jpg);
+    display: flex;
+    flex-direction: row;
+    max-width: 1920px;
+}
+
+.MainIntroColumn {
+    min-width: 60px;
+    min-height: 940px;
+    height: 100%;
+}
+
+.BlankViewport {
+    background-image: url(../CyberBGBlueandCandyIllusion112021.png);
+    display: flex;
+    flex-direction: row;
+    max-width: 1920px;
+}
+
+.BlankColumn {
+    min-width: 60px;
+    min-height: 940px;
+    height: 100%;
+}
+
+
+
+
+

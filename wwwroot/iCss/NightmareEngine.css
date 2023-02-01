@@ -1,0 +1,38 @@
+﻿
+.NightmareViewport {
+    background-color: black;
+    background-image:url("../images/Objects/SnowpixelBG002.png");
+    display: flex;
+    flex-direction: row;
+    max-width: 1920px;
+}
+
+.NightmareColumn {
+    min-width: 60px;
+    min-height: 940px;
+    height: 100%;
+}
+
+.PlayerPiece {
+    border: solid 1px white;
+    min-height: 60px;
+    min-width: 60px;
+}
+
+.warrior {
+    background-image: url("../Warrior.png");
+    background-repeat: no-repeat;
+}
+
+.mage {
+    background-image: url("../BlackMageT001.png");
+    background-repeat: no-repeat;
+}
+.rogue {
+    background-image: url("../Rogue.png");
+    background-repeat: no-repeat;
+}
+
+.blank {
+    background-image: none;
+}

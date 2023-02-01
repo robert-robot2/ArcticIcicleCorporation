@@ -1,0 +1,127 @@
+﻿@page "/"
+
+
+@using ArcticIcicleCorporation.Data;
+@using ArcticIcicleCorporation.Data.Services;
+@inject IndexAnimationService iAnimationService;
+
+
+@using Blazor.Extensions;
+@using Blazor.Extensions.Canvas;
+@using Blazor.Extensions.Canvas.Canvas2D;
+@using Newtonsoft.Json;
+@using Newtonsoft.Json.Linq;
+@using Microsoft.JSInterop;
+
+@inject IJSRuntime jsRuntime
+
+
+
+
+
+
+
+
+
+
+
+
+
+<PageTitle>Index</PageTitle>
+
+<div class="IcySegoeRedBlack">NetCore 6.0!</div>
+
+
+
+<div id="MainCanvas" class="CanvasIndexMain" style="flex-direction:column;background-color:rgba(0,0,0,1)">
+
+<BECanvas Width="400" Height="1080" @ref="MaincanvasReference" ></BECanvas>
+
+
+</div>
+<br />
+<div class=""></div>
+
+@code{
+
+
+
+
+    private List<IndexAnimation> Animations = new List<IndexAnimation>();
+
+    private Canvas2DContext context;
+
+    protected BECanvasComponent MaincanvasReference;
+
+    object BlueRecta = "rgba(14,26,48,.7)";
+    string MainFont ="48px Segoe Script";
+
+
+
+    protected override async Task OnAfterRenderAsync(bool Render)
+    {
+        if (!Render) return;
+        context = await MaincanvasReference.CreateCanvas2DAsync();
+
+
+
+
+        Animate();
+
+
+
+
+    }
+
+
+
+
+
+
+    async void Animate()
+    {
+
+
+
+        await context.SetFillStyleAsync("rgba(10,50,150,0.2)");
+        await context.FillRectAsync(90, 200, 200, 200);
+
+        await context.SetFillStyleAsync(BlueRecta);
+        await context.FillRectAsync(50, 180, 100, 100);
+
+
+
+        MainText();
+
+
+    }
+
+
+
+
+    async void MainText()
+
+
+
+    {
+
+        await context.SetFontAsync(MainFont);
+        await context.SetStrokeStyleAsync("white");
+        await context.SetShadowColorAsync("blue");
+        await context.SetShadowBlurAsync(20);
+        await context.StrokeTextAsync("Arctic Icicle", 10, 100);
+        await context.StrokeTextAsync("Corporation", 20, 150);
+
+
+        
+
+
+        
+  
+
+
+    }
+ 
+
+             
+}

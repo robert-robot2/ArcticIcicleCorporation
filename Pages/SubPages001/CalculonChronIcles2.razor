@@ -1,0 +1,157 @@
+﻿@page "/CalculonChronicles2"
+
+@using System;
+@using System.Collections.Generic;
+
+
+@using ArcticIcicleCorporation.Data.Calculon;
+
+<div class="IcySegoeWhite">3/14/22 10:38AM</div>
+<div class="IcySegoeWhite">Made Number Interface from C sharp Tut for adding 1 and 2 then adding its total!</div>
+<div class="IcySegoeWhite">Created Duplicate of Calculon With INumberInterface to Be FrankenSteined!!</div>
+
+
+
+
+
+
+  <p class="IcySegoeWhite">You Can Type Your Number Via KeyBoard or Use buttons for basic 1 Number Input!
+            </p>
+
+
+<div class="" >
+    
+   
+  
+   
+       
+    <div>
+    
+       
+        <div class="IcySegoeRedBlack">First Number Box</div>
+        
+    
+        <input class="CalcBoxInput IcySegoeBlue" id="Box1"placeholder="Enter First Number" @bind-value="@Calculon000.numberSource" />
+    
+        
+        <div class="IcySegoeRedBlack">Second Number Box</div>
+        
+        <input class="CalcBoxInput IcySegoeBlue" id ="Box2"placeholder="Enter Second Number"  @bind-value="@Calculon000.numberSource2"/>
+    
+        
+        <div>
+            <button class="Calcbtn IcySegoeDefault"@onclick="@Calculon000.AddNumbers1">Add (+)</button>
+            <button class="Calcbtn IcySegoeDefault"@onclick="@Calculon000.SubtractNumbers1">Subtract (-)</button>
+            </div>
+        <div>
+            <button class="Calcbtn IcySegoeDefault"@onclick="@Calculon000.DivideNumbers1">Divide (/)</button>
+            <button class="Calcbtn IcySegoeDefault"@onclick="@Calculon000.MultiplyNumbers1">Multiply (*)</button>
+        </div>
+        
+        
+  
+        <div class="IcySegoeRedBlack">Input For First Number Box
+        
+        
+        <div>
+
+          @for (var i = 0; i <= 9; i++)
+          {
+              var NumberID = i;
+            
+                    <button class="Calcbtn"@onclick="() => Calculon000.AllNumbers(NumberID)">@NumberID</button>
+             }
+
+        </div>
+         </div>
+         <div class="IcySegoeRedBlack">Input For Second Number Box
+        
+
+         <div>
+          @for (var j = 0; j <= 9; j++)
+                { var Number2ID2 = j;
+                    <button  class="Calcbtn"@onclick="() => Calculon000.AllNumbers2(Number2ID2)">@Number2ID2</button>
+    
+                }
+   
+         </div>
+         </div>
+        
+        
+        <button class="Calcbtn IcySegoeGreen" @onclick="@Calculon000.ClearNumbers">Clear</button>
+       
+          <button class="Calcbtn IcySegoeGreen" @onclick="@Calculon000.DecimalNumbers">.</button>
+       
+          <button class="Calcbtn IcySegoeGreen" @onclick="@Calculon000.EqualsNumbers">=</button>
+       
+
+
+     
+
+    <input class="CalcBoxInput IcySegoeWhite" style="font-size:150%;" placeholder="Total"@bind="@Calculon000.finalResult1">
+    
+    </div>
+    
+   
+       
+</div>
+ 
+           
+<div class="IcySegoeWhite">Clicking this box adds one, two and three then adds the total together on continuous click!</div>
+
+
+
+
+
+
+    <button class="IcySegoeWhite" @onclick="@calculon000.INumberDisplay">Calculon</button>
+    
+
+
+
+    <div class="IcySegoeBlue">Total=@Calculon000.totalNumbers</div>
+
+
+
+
+
+
+ 
+    @code
+{
+
+  
+
+    Calculon000 calculon000 = new Calculon000();
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br/><svg width="400" height="20">
+  <rect width="400" height="20" style="fill:rgb(40 40 83);" />
+</svg>
+
+
+
+
+
+
+
+
+
+<div class="IcySegoeWhite">Code Chunks to build with!</div>
+
